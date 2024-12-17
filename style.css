@@ -175,12 +175,12 @@ body {
   font-size: 25px; /* 字号为25 */
   color: white; /* 文字颜色为白色 */
   white-space: nowrap; /* 禁止文字换行 */
-  font-family: 'Comic Sans MS', cursive;
+  font-family: Arial, sans-serif;
 }
 
 .countdown-text {
   font-size: 25px; /* 字号为25 */
   color: white; /* 文字颜色为白色 */
   white-space: nowrap; /* 禁止文字换行 */
-  font-family: 'Comic Sans MS', cursive;
+  font-family: Arial, sans-serif;
 }
