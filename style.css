@@ -166,8 +166,7 @@ body {
 }
 
 .Tree {
-  position: relative;
-  margin-bottom: 80vh; /* 距离顶部10%的位置 */
+  text-align: center; /* 让内容居中 */
 }
 
 .treeText {
@@ -177,8 +176,7 @@ body {
   font-family: 'Comic Sans MS', cursive;
 }
 
-.countdown-text{
-  text-align: center; /* 文字居中 */
+.countdown-text {
   font-size: 25px; /* 字号为25 */
   color: white; /* 文字颜色为白色 */
   white-space: nowrap; /* 禁止文字换行 */
