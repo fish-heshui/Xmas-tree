@@ -12,15 +12,24 @@ function updateCountdown() {
   // 计算剩余时间（毫秒）
   const timeRemaining = targetDate - now;
 
-  // 将毫秒转换为天数
-  const daysRemaining = Math.ceil(timeRemaining / (1000 * 60 * 60 * 24));
+  // 如果倒计时结束，显示提示
+  if (timeRemaining <= 0) {
+    countdownElement.textContent = `0 days, 0 hours, 0 minutes, 0 seconds to 2024 Christmas\nMerry Christmas!`;
+    return;
+  }
+
+  // 将毫秒转换为天、小时、分钟和秒
+  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
   // 更新页面内容
-  countdownElement.textContent = `${daysRemaining} days to 2024 Christmas!`;
+  countdownElement.textContent = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds to 2024 Christmas`;
 }
 
 // 初始化倒计时
 updateCountdown();
 
-// 每小时更新一次倒计时（防止页面长时间打开导致时间不准确）
-setInterval(updateCountdown, 60 * 60 * 1000);
+// 每秒更新一次倒计时
+setInterval(updateCountdown, 1000);
