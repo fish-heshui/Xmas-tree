@@ -180,7 +180,7 @@ body {
   font-family: 'Comic Sans MS', cursive;
 }
 
-.countdown{
+.countdown-text{
   left: 50%; /* 居中 */
   font-size: 25px; /* 字号为25 */
   transform: translateX(-50%); /* 水平居中 */
