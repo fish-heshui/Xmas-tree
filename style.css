@@ -171,11 +171,7 @@ body {
 }
 
 .treeText {
-  position: absolute;
-  bottom: 10%; /* 距离底部10%的位置 */
-  left: 50%; /* 居中 */
   font-size: 25px; /* 字号为25 */
-  transform: translateX(-50%); /* 水平居中 */
   color: white; /* 文字颜色为白色 */
   white-space: nowrap; /* 禁止文字换行 */
   font-family: 'Comic Sans MS', cursive;
