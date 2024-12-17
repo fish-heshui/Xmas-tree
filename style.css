@@ -175,11 +175,9 @@ body {
   color: white; /* 文字颜色为白色 */
   white-space: nowrap; /* 禁止文字换行 */
   font-family: 'Comic Sans MS', cursive;
-  display: block; /* 让文字独占一行 */
 }
 
 .countdown-text{
-  display: block; /* 让文字独占一行 */
   text-align: center; /* 文字居中 */
   font-size: 25px; /* 字号为25 */
   color: white; /* 文字颜色为白色 */
