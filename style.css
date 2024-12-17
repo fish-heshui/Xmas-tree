@@ -167,6 +167,8 @@ body {
 
 .Tree {
   text-align: center; /* 让内容居中 */
+  position: absolute; /* 绝对定位 */
+  bottom: 10%; /* 距离页面底部 10% */
 }
 
 .treeText {
