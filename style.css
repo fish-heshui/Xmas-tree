@@ -168,6 +168,8 @@ body {
 .Tree {
   position: absolute; /* 绝对定位 */
   bottom: 10%; /* 距离页面底部 10% */
+  left: 50%; /* 将左边缘定位到页面中间 */
+  transform: translateX(-50%); /* 向左移动自身宽度的一半 */
   width: 100%; /* 宽度占满父容器 */
   text-align: center; /* 让内容居中 */
 }
